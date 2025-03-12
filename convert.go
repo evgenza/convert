@@ -113,3 +113,4 @@ func ToXML(v any) (string, error) {
 // v must be a pointer to the target variable.
 func FromXML(s string, v any) error {
 	return xml.Unmarshal([]byte(s), v)
+}
